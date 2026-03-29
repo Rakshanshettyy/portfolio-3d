@@ -21,10 +21,8 @@ const Contact = () => {
             </p>
             <h4>Education</h4>
             <p>
-              Master of Computer Applications (MCA), Manipal Institute of Technology — 2021–2023
-            </p>
-            <p>
-              Bachelor of Computer Applications (BCA), Mangalore University — 2018–2021
+              Master of Computer Applications (MCA),<br /> Manipal Institute of Technology 
+              — 2021–2023
             </p>
           </div>
           <div className="contact-box">
