@@ -8,7 +8,7 @@ const projects = [
     title: "FluxHub",
     category: "Microservices Ecosystem",
     tools: "Spring Boot, Google Cloud Run, Docker, MongoDB, GitHub Actions",
-    image: "/images/fluxhub.png", // Ensure this image exists in public/images/
+    image: "/images/fluxhub-logo.png", 
     link: "https://fluxhubv1.netlify.app/",
   },
   {
