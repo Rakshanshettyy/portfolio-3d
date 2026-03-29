@@ -5,32 +5,32 @@ import { MdArrowBack, MdArrowForward } from "react-icons/md";
 
 const projects = [
   {
-    title: "CallHQ",
-    category: "Voice AI Calling Platform",
-    tools: "Voice AI, Calling Automation, CRM Integrations",
-    image: "/images/callhq.png",
-    link: "https://callhq.ai",
+    title: "FluxHub",
+    category: "Microservices Ecosystem",
+    tools: "Spring Boot, Google Cloud Run, Docker, MongoDB, GitHub Actions",
+    image: "/images/fluxhub.png", // Ensure this image exists in public/images/
+    link: "https://fluxhubv1.netlify.app/",
   },
   {
-    title: "Whatsapp Automation",
-    category: "WABA Application",
-    tools: "WhatsApp Business API, Workflow Automation, Notifications",
-    image: "/images/whatsapp.png",
-    link: "https://whatsapp.callhq.ai",
+    title: "NidhiGold",
+    category: "Gold Finance Software",
+    tools: "Core Java, J2EE, AWS, MySQL, Vue.js, RESTful APIs",
+    image: "https://manipalhousing.com/images/nidhi.png",
+    link: "#",
   },
   {
-    title: "Broki",
-    category: "Real Estate Platform for FnB Industry",
-    tools: "Property Discovery, Lead Management, Marketplace Workflows",
-    image: "/images/broki.png",
-    link: "https://broki.in",
+    title: "Glassio",
+    category: "Real-Time Collaborative Editor",
+    tools: "React, Node.js, Firebase DB, Web Sockets",
+    image: "https://images.unsplash.com/photo-1555066931-4365d14bab8c?q=80&w=1000&auto=format&fit=crop",
+    link: "https://glassio.netlify.app/",
   },
   {
-    title: "Orrdr.com",
-    category: "Ecommerce Platform and Mobile App",
-    tools: "Ecommerce, Mobile Experience, Order Management",
-    image: "/images/orrdr.png",
-    link: "https://orrdr.com",
+    title: "AdmitScope",
+    category: "Student Consulting Platform",
+    tools: "React, Bootstrap 5, SCSS, Axios, Postman",
+    image: "https://images.unsplash.com/photo-1434030216411-0b793f4b4173?q=80&w=1000&auto=format&fit=crop",
+    link: "#",
   },
 ];
 

@@ -13,8 +13,16 @@ import {
 
 const textureLoader = new THREE.TextureLoader();
 const imageUrls = [
+  "https://www.vectorlogo.zone/logos/java/java-icon.svg", // Core Java
+  "https://www.vectorlogo.zone/logos/springio/springio-icon.svg", // Spring Boot
+  "https://upload.wikimedia.org/wikipedia/commons/9/93/Amazon_Web_Services_Logo.svg", // AWS
+  "https://www.vectorlogo.zone/logos/docker/docker-icon.svg", // Docker
+  "https://www.vectorlogo.zone/logos/nodejs/nodejs-icon.svg", // Node.js
+  "https://www.vectorlogo.zone/logos/dotnet/dotnet-icon.svg", // .NET Core
+  "https://www.vectorlogo.zone/logos/reactjs/reactjs-icon.svg", // React
+  "https://www.vectorlogo.zone/logos/typescriptlang/typescriptlang-icon.svg", // TypeScript
+  "https://www.vectorlogo.zone/logos/firebase/firebase-icon.svg", // Firebase
   "/images/react2.webp",
-  "/images/next2.webp",
   "/images/node2.webp",
   "/images/express.webp",
   "/images/mongo.webp",
