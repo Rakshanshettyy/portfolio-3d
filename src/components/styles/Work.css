@@ -179,16 +179,21 @@
   border-color: var(--accentColor);
   box-shadow: 0 0 8px rgba(94, 234, 212, 0.4);
 }
-
-/* ── Work Image (reused) ── */
+/* ── Work Image (Optimized for all screens) ── */
 .work-image {
   display: flex;
   width: 100%;
   justify-content: center;
+  /* Added to prevent overflow */
+  max-width: 100%; 
+  overflow: hidden;
 }
 
 .work-image-in {
   position: relative;
+  /* Ensure the container doesn't exceed the image bounds */
+  display: inline-block; 
+  max-width: 100%;
 }
 
 .work-link {
@@ -225,20 +230,23 @@
   left: 0;
   background-color: #000;
   object-fit: cover;
-}
-
-.work-image img {
-  max-width: 100%;
-  max-height: 400px;
   border-radius: 8px;
 }
 
-/* ── Responsive ── */
+.work-image img {
+  width: 100%;         /* Forces image to respect container width */
+  height: auto;        /* Maintains aspect ratio */
+  max-width: 600px;    /* Prevents image from getting too huge on desktop */
+  max-height: 400px;
+  border-radius: 8px;
+  object-fit: contain; /* Ensures the whole image is visible without stretching */
+}
+
+/* ── Updated Responsive Section ── */
 @media only screen and (max-width: 1600px) {
   .carousel-arrow-left {
     left: -60px;
   }
-
   .carousel-arrow-right {
     right: -60px;
   }
@@ -248,23 +256,18 @@
   .work-section h2 {
     font-size: 50px;
   }
-
   .carousel-details h4 {
     font-size: 22px;
   }
-
   .carousel-number h3 {
     font-size: 45px;
   }
-
   .carousel-content {
     gap: 40px;
   }
-
   .carousel-arrow-left {
     left: 10px;
   }
-
   .carousel-arrow-right {
     right: 10px;
   }
@@ -274,14 +277,22 @@
   .carousel-content {
     flex-direction: column;
     gap: 30px;
+    text-align: center; /* Centers text for better mobile aesthetics */
   }
 
   .carousel-info {
     width: 100%;
+    justify-content: center; /* Centers the number and details */
   }
 
   .carousel-image-wrapper {
     width: 100%;
+    padding: 0 20px; /* Adds breathing room on sides */
+  }
+
+  .work-image img {
+    max-width: 100%;  /* Ensures it fits small screens */
+    max-height: 300px; /* Reduces vertical height on tablets */
   }
 
   .carousel-arrow {
@@ -289,43 +300,44 @@
     height: 40px;
     font-size: 18px;
   }
-
-  .carousel-arrow-left {
-    left: 10px;
-  }
-
-  .carousel-arrow-right {
-    right: 10px;
-  }
 }
 
-@media only screen and (max-width: 900px) {
+@media only screen and (max-width: 600px) {
   .work-section {
     padding: 50px 0;
   }
 
   .work-section h2 {
-    font-size: 40px;
-    margin-bottom: 30px;
+    font-size: 36px;
+    margin-bottom: 25px;
+  }
+
+  .carousel-info {
+    gap: 15px;
+    flex-direction: column; /* Stacks the project number above title */
+    align-items: center;
   }
 
   .carousel-number h3 {
-    font-size: 35px;
+    font-size: 30px;
   }
 
   .carousel-details h4 {
-    font-size: 20px;
+    font-size: 18px;
   }
 
-  .carousel-content {
-    gap: 20px;
+  /* Fixed Huge Width Issue */
+  .work-image img {
+    max-height: 200px; /* Limits the vertical space taken by images */
+    width: 90%;        /* Restricts width so it doesn't hit screen edges */
+    margin: 0 auto;
   }
 
   .carousel-slide {
-    padding: 30px 0;
+    padding: 20px 0;
   }
 
-  .work-image img {
-    max-height: 250px;
+  .carousel-arrow {
+    display: none; /* Hide arrows on small mobile to prevent overlap with content */
   }
 }
