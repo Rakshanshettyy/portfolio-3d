@@ -2,7 +2,7 @@
 
 This repository contains the source code for my personal 3D portfolio, customized to showcase my expertise in **Backend Engineering** and **Cloud Infrastructure**. Built with React, TypeScript, and Three.js, it features a physics-based tech stack gallery and an interactive 3D character scene.
 
-**Live Site:** [https://portfolio-3d-rakshanshettyy.vercel.app/](https://github.com/Rakshanshettyy/portfolio-3d) 
+**Live Site:** [https://rakshanshetty.me](https://github.com/Rakshanshettyy/portfolio-3d) 
 *(Update this with your actual Vercel/Netlify URL once deployed)*
 
 ![Portfolio Preview](public/images/preview1.png)
